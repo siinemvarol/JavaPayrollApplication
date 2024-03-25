@@ -1,11 +1,12 @@
 package com.sinem.repository.entity;
 
-abstract class Employee {
+public abstract class Employee {
     private String name;
     private String surname;
 
-    public void calculateWage() {
-
+    public int calculateWage(short hourlyRate, short workingHour) {
+        int wage = hourlyRate * workingHour;
+        return wage;
     }
 
 }
