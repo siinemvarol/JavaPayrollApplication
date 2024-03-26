@@ -50,6 +50,11 @@ public class ReadFile {
                     currentOfficer.setName(name);
                     currentOfficer.setSurname(surname);
                     employeeList.add(currentOfficer);
+
+                    System.out.println("Please enter hourly rate of officer: ");
+                    short officerHourlyRate = Short.valueOf(scanner.nextLine());
+                    System.out.println("Please enter working hour of officer: ");
+                    short officerWorkingHour = Short.valueOf(scanner.nextLine());
                 }
             }
             System.out.println("employee list is: " + employeeList);
