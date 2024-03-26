@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e48944d-d42f-4c88-8575-1fbb76a91cd1" name="Changes" comment="Entities created for payroll application">
+    <list default="true" id="6e48944d-d42f-4c88-8575-1fbb76a91cd1" name="Changes" comment="Updates on entities and file reading operation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/PayrollApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/PayrollApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Officer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Officer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Payroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Payroll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/util/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/util/ReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,20 +41,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/BOOST DERSLER/boost_ders",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/BOOST DERSLER/boost_ders&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PayrollApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sinem.PayrollApplication" />
@@ -86,7 +85,8 @@
       <updated>1711300910882</updated>
       <workItem from="1711300912976" duration="596000" />
       <workItem from="1711311196631" duration="1563000" />
-      <workItem from="1711365802425" duration="4443000" />
+      <workItem from="1711365802425" duration="6491000" />
+      <workItem from="1711410465920" duration="1504000" />
     </task>
     <task id="LOCAL-00001" summary="Entities created for payroll application">
       <created>1711312456155</created>
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711312456155</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Reading json file feature is added">
+      <created>1711371796756</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711371796756</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Entities created for payroll application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entities created for payroll application" />
+    <MESSAGE value="Reading json file feature is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reading json file feature is added" />
   </component>
 </project>
