@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e48944d-d42f-4c88-8575-1fbb76a91cd1" name="Changes" comment="Updates on entities and file reading operation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee.json" beforeDir="false" afterPath="$PROJECT_DIR$/employee.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/PayrollApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/PayrollApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Officer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Officer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Payroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Payroll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/util/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/util/ReadFile.java" afterDir="false" />
     </list>
@@ -87,6 +87,7 @@
       <workItem from="1711311196631" duration="1563000" />
       <workItem from="1711365802425" duration="6491000" />
       <workItem from="1711410465920" duration="1504000" />
+      <workItem from="1711472942478" duration="8591000" />
     </task>
     <task id="LOCAL-00001" summary="Entities created for payroll application">
       <created>1711312456155</created>
@@ -102,15 +103,41 @@
       <option name="project" value="LOCAL" />
       <updated>1711371796756</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updates on entities and file reading operation">
+      <created>1711473016683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711473016684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updates on entities and file reading operation">
+      <created>1711473360420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711473360420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Entities created for payroll application" />
     <MESSAGE value="Reading json file feature is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reading json file feature is added" />
+    <MESSAGE value="Updates on entities and file reading operation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates on entities and file reading operation" />
   </component>
 </project>
