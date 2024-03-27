@@ -4,6 +4,8 @@ package com.sinem.repository.entity;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import java.io.File;
+
 public class Payroll {
 
      public static JSONArray payrollList = new JSONArray();
@@ -30,6 +32,13 @@ public class Payroll {
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
         payrollList.add(payrollDetails);
+
+        File managerFile = new File("C:\\JavaPayrollApplication\\" + manager.getName() + manager.getSurname());
+        if(managerFile.mkdir() == true) {
+
+        } else {
+            System.err.println("error");
+        }
     }
 
     public void createOfficerPayroll(Employee officer, ESeniority officerSeniority, short officerWorkingHour) {
@@ -70,6 +79,13 @@ public class Payroll {
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
         payrollList.add(payrollDetails);
+
+        File officerFile = new File("C:\\JavaPayrollApplication\\" + officer.getName() + officer.getSurname());
+        if(officerFile.mkdir() == true) {
+
+        } else {
+            System.err.println("error");
+        }
 
     }
 }

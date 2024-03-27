@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e48944d-d42f-4c88-8575-1fbb76a91cd1" name="Changes" comment="Writing to .json file feature is added">
+    <list default="true" id="6e48944d-d42f-4c88-8575-1fbb76a91cd1" name="Changes" comment="Calculating manager payroll feature is updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee.json" beforeDir="false" afterPath="$PROJECT_DIR$/employee.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Payroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/repository/entity/Payroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinem/util/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinem/util/ReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
       <workItem from="1711365802425" duration="6491000" />
       <workItem from="1711410465920" duration="1504000" />
       <workItem from="1711472942478" duration="9456000" />
-      <workItem from="1711576196603" duration="1295000" />
+      <workItem from="1711576196603" duration="2139000" />
     </task>
     <task id="LOCAL-00001" summary="Entities created for payroll application">
       <created>1711312456155</created>
@@ -123,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711487792232</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Calculating manager payroll feature is updated">
+      <created>1711577669534</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711577669535</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +150,7 @@
     <MESSAGE value="Reading json file feature is added" />
     <MESSAGE value="Updates on entities and file reading operation" />
     <MESSAGE value="Writing to .json file feature is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Writing to .json file feature is added" />
+    <MESSAGE value="Calculating manager payroll feature is updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calculating manager payroll feature is updated" />
   </component>
 </project>
