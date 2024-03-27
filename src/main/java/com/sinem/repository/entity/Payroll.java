@@ -5,10 +5,10 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Payroll {
-
-     public static JSONArray payrollList = new JSONArray();
 
     public void createManagerPayroll(Employee manager, short managerHourlyRate, short managerWorkingHour, short managerBonusPayment) {
         Employee currentManager = new Manager();
@@ -31,11 +31,16 @@ public class Payroll {
         JSONObject payrollDetails = new JSONObject();
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
-        payrollList.add(payrollDetails);
 
-        File managerFile = new File("C:\\JavaPayrollApplication\\" + manager.getName() + manager.getSurname());
+        String pathname = "C:\\JavaPayrollApplication\\" + manager.getName() + manager.getSurname();
+        File managerFile = new File(pathname);
         if(managerFile.mkdir() == true) {
-
+            try (FileWriter file = new FileWriter(pathname + "\\payroll_march.json")) {
+                file.write(payrollDetails.toString());
+                file.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             System.err.println("error");
         }
@@ -78,11 +83,16 @@ public class Payroll {
         JSONObject payrollDetails = new JSONObject();
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
-        payrollList.add(payrollDetails);
 
-        File officerFile = new File("C:\\JavaPayrollApplication\\" + officer.getName() + officer.getSurname());
+        String pathname = "C:\\JavaPayrollApplication\\" + officer.getName() + officer.getSurname();
+        File officerFile = new File(pathname);
         if(officerFile.mkdir() == true) {
-
+            try (FileWriter file = new FileWriter(pathname + "\\payroll_march.json")) {
+                file.write(payrollDetails.toString());
+                file.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             System.err.println("error");
         }
