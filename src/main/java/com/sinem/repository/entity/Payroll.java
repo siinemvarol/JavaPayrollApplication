@@ -13,7 +13,23 @@ public class Payroll {
         currentManager.setName(manager.getName());
         currentManager.setSurname(manager.getSurname());
         int wage = currentManager.calculateWage(managerHourlyRate, managerWorkingHour);
+
+        JSONObject paymentDetails = new JSONObject();
+        paymentDetails.put("mainWage", wage);
+        paymentDetails.put("bonusPayment", managerBonusPayment);
         wage += managerBonusPayment;
+        paymentDetails.put("totalPayment", wage);
+
+        JSONObject employeeDetails = new JSONObject();
+        employeeDetails.put("nameSurname", currentManager.getName() + " " + currentManager.getSurname());
+        employeeDetails.put("role", "Manager");
+        employeeDetails.put("workingHour", managerWorkingHour);
+        employeeDetails.put("paymentDetails", paymentDetails);
+
+        JSONObject payrollDetails = new JSONObject();
+        payrollDetails.put("payroll", "MARCH 2024");
+        payrollDetails.put("employeeDetails", employeeDetails);
+        payrollList.add(payrollDetails);
     }
 
     public void createOfficerPayroll(Employee officer, ESeniority officerSeniority, short officerWorkingHour) {
@@ -45,13 +61,14 @@ public class Payroll {
 
         JSONObject employeeDetails = new JSONObject();
         employeeDetails.put("nameSurname", currentOfficer.getName() + " " + currentOfficer.getSurname());
+        employeeDetails.put("role", "Officer");
+        employeeDetails.put("seniority", officerSeniority.toString());
         employeeDetails.put("workingHour", officerWorkingHour);
         employeeDetails.put("paymentDetails", paymentDetails);
 
         JSONObject payrollDetails = new JSONObject();
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
-
         payrollList.add(payrollDetails);
 
     }

@@ -42,6 +42,7 @@ public class ReadFile {
                     short managerHourlyRate;
 
                     do {
+                        System.out.println("Name Surname: " + currentManager.getName() + " " + currentManager.getSurname());
                         System.out.println("Please enter hourly rate of manager: ");
                         managerHourlyRate = Short.valueOf(scanner.nextLine());
                         if (managerHourlyRate < 500) {
@@ -89,7 +90,6 @@ public class ReadFile {
                     payrollOpr.createOfficerPayroll(currentOfficer, officerSeniority, officerWorkingHour);
                 }
             }
-  //          System.out.println("employee list is: " + employeeList);
         } catch (FileNotFoundException e) {
             System.out.println("File not found!");
             e.printStackTrace();
