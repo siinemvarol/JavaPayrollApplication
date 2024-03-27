@@ -7,8 +7,11 @@ import org.json.simple.JSONObject;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Payroll {
+    public static JSONArray payrollList = new JSONArray();
 
     public void createManagerPayroll(Employee manager, short managerHourlyRate, short managerWorkingHour, short managerBonusPayment) {
         Employee currentManager = new Manager();
@@ -31,6 +34,7 @@ public class Payroll {
         JSONObject payrollDetails = new JSONObject();
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
+        payrollList.add(payrollDetails);
 
         String pathname = "C:\\JavaPayrollApplication\\" + manager.getName() + manager.getSurname();
         File managerFile = new File(pathname);
@@ -83,6 +87,7 @@ public class Payroll {
         JSONObject payrollDetails = new JSONObject();
         payrollDetails.put("payroll", "MARCH 2024");
         payrollDetails.put("employeeDetails", employeeDetails);
+        payrollList.add(payrollDetails);
 
         String pathname = "C:\\JavaPayrollApplication\\" + officer.getName() + officer.getSurname();
         File officerFile = new File(pathname);

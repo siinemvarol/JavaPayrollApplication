@@ -15,8 +15,9 @@ import org.json.simple.parser.*;
 
 public class ReadFile {
 
-    public static List<Employee> readJsonFile(String fileName) {
-        List<Employee> employeeList = new ArrayList<>();
+    public static List<Employee> lessThan150WorkingHourList = new ArrayList<>();
+
+    public static void readJsonFile(String fileName) {
         Payroll payrollOpr = new Payroll();
         JSONParser parser = new JSONParser();
 
@@ -36,7 +37,6 @@ public class ReadFile {
                     Employee currentManager = new Manager();
                     currentManager.setName(name);
                     currentManager.setSurname(surname);
-                    employeeList.add(currentManager);
 
                     boolean rateGreaterThan500;
                     short managerHourlyRate;
@@ -54,6 +54,9 @@ public class ReadFile {
                     } while (!rateGreaterThan500);
                     System.out.println("Please enter working hour of manager: ");
                     short managerWorkingHour = Short.valueOf(scanner.nextLine());
+                    if(managerWorkingHour < 150) {
+                        lessThan150WorkingHourList.add(currentManager);
+                    }
                     System.out.println("Please enter bonus payment of manager: ");
                     short managerBonusPayment = Short.valueOf(scanner.nextLine());
                     payrollOpr.createManagerPayroll(currentManager, managerHourlyRate, managerWorkingHour, managerBonusPayment);
@@ -62,7 +65,6 @@ public class ReadFile {
                     Employee currentOfficer = new Officer();
                     currentOfficer.setName(name);
                     currentOfficer.setSurname(surname);
-                    employeeList.add(currentOfficer);
 
                     boolean isSeniorityValid;
                     String officerSeniorityString;
@@ -87,6 +89,9 @@ public class ReadFile {
 
                     System.out.println("Please enter working hour of officer: ");
                     short officerWorkingHour = Short.valueOf(scanner.nextLine());
+                    if(officerWorkingHour < 150) {
+                        lessThan150WorkingHourList.add(currentOfficer);
+                    }
                     payrollOpr.createOfficerPayroll(currentOfficer, officerSeniority, officerWorkingHour);
                 }
             }
@@ -98,6 +103,5 @@ public class ReadFile {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        return employeeList;
     }
 }
